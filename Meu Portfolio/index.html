@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Junior - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </div>
+</nav>
+
+<header>
+    <div class="container header-content">
+        <h1>Alessandro Junior</h1>
+        <p>Desenvolvedor Web | Crio sites simples, rápidos e modernos</p>
+        <a href="#projetos" class="btn">Ver meus projetos</a>
+    </div>
+</header>
+
+<main class="container">
+
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <div class="linha"></div>
+        <p>Sou <strong>Alessandro Junior</strong>, estudante de desenvolvimento de sistemas há <strong>3 anos</strong>. Gosto muito de criar sites rápidos e funcionais.</p>
+        <p>Gosto de resolver problemas, aprender novas tecnologias e evoluir constantemente minhas habilidades na programação.</p>
+        <p>Atualmente, estou disponível para projetos de sites institucionais, páginas simples e manutenção básica, sempre prezando por qualidade e entrega no prazo.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="linha"></div>
+        <div class="projetos">
+            <div class="projeto">
+                <h3>Site de Barbearia</h3>
+                <p>Site institucional para barbearia, com informações de serviços e contato.</p>
+                <a href="projetos/site-barbearia/index.html" target="_blank" class="btn">Ver projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="linha"></div>
+        <p>Entre em contato comigo por qualquer um dos canais abaixo:</p>
+        <ul>
+            <li>📱 <a href="https://wa.me/5543991641793" target="_blank" class="contato-btn">WhatsApp</a></li>
+            <li>📧 <a href="mailto:juniormalaquias81@gmail.com" class="contato-btn">Email</a></li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 - Alessandro Junior</p>
+</footer>
+
+<script>
+    // Scroll suave
+    const links = document.querySelectorAll('nav a, .btn[href^="#"]');
+    for (const link of links) {
+        link.addEventListener('click', function(e){
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            target.scrollIntoView({behavior: 'smooth'});
+        });
+    }
+</script>
+
+</body>
+</html>
